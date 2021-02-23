@@ -78,6 +78,15 @@ can be used to ask the bot to do the following:
 * when the version was bumped, generate a wheel and rsync it to the PEP 503
   simple index
 
+``/ocabot migration``, followed by the module name, performing the following:
+
+* Look for an issue in that repository with the name "Migration to version
+  ``{version}``", where ``{version}`` is the name of the target branch.
+* Add or edit a line in that issue, linking the module to the pull request
+  (PR) and the author of it.
+* TODO: When the PR is merged, the line gets ticked.
+* Put the milestone corresponding to the target branch in the PR.
+
 TODO (help wanted)
 ------------------
 
@@ -204,6 +213,8 @@ Contributors
 * Jose Angel Fentanez <joseangel@vauxoo.com>
 * Simone Rubino <simone.rubino@agilebg.com>
 * Sylvain Le Gal (https://twitter.com/legalsylvain)
+* Tecnativa - Pedro M. Baeza
+* Tecnativa - Víctor Martínez
 
 Maintainers
 ===========
